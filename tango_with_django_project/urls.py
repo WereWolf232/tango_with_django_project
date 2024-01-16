@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('rango/', include('rango.urls')),
     path('', views.index, name="index"),
+    #without the above, default index is not existent
 ]
