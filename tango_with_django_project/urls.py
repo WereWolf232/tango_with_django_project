@@ -21,6 +21,8 @@ from rango import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('rango/', include('rango.urls')),
+    
+    # without the below, default index is not existent
     path('', views.index, name="index"),
-    #without the above, default index is not existent
+   
 ]
