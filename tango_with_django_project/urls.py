@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rango import views
 from django.conf import settings    
-from django.conf.urls import static
+from django.conf.urls.static import static 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,5 @@ urlpatterns = [
     # without the below, default index is not existent
     path('', views.index, name="index"),
     
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_URL) #no idea what this does
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # This allows accessing the image through a URL
+# I can only assume that this works automatically for the static directory (special colour) and not for the media directory
