@@ -41,6 +41,7 @@ class Chapter10ConfigurationTests(TestCase):
     Tests the configuration of the Django project -- can cookies be used, at least on the server-side?
     """
         
+    '''test still works'''
     def test_middleware_present(self):
         """
         Tests to see if the SessionMiddleware is present in the project configuration.
