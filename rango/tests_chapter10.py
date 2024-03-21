@@ -40,8 +40,6 @@ class Chapter10ConfigurationTests(TestCase):
     """
     Tests the configuration of the Django project -- can cookies be used, at least on the server-side?
     """
-    def test_about_view(self):
-        self.assertFalse(True)
         
     def test_middleware_present(self):
         """
