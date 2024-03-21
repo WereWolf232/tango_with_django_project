@@ -14,7 +14,9 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_DIR = BASE_DIR / "templates" #pathlib paths automatically adjust the slash dependent on the OS
+
+#pathlib paths automatically adjust the slash dependent on the OS
+TEMPLATE_DIR = BASE_DIR / "templates" 
 STATIC_DIR = BASE_DIR / "static"
 MEDIA_DIR = BASE_DIR / "media"
 
