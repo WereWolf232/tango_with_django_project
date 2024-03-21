@@ -17,8 +17,6 @@ class Chapter10ConfigurationTests(TestCase):
     """
     def test_fail(self):
         self.assertFalse(True)
-        
-    ''' still works'''
     
     
     def test_middleware_present(self):
